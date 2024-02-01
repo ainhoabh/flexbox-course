@@ -1,33 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset='UTF-8'>
+    <title></title>
 
     <style>
         body {
             margin: 0;
             padding: 0;
         }
-
         .container {
             margin: 0;
-            height: calc(100vh - 20px); 
+            height: calc(100vh - 20px);
             width: calc(100vw - 20px);
-            /* Estos cálculos deben de ser para restar el borde que se define abajo. */
             border: 10px solid red;
             display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .container > .img_blocks {
-            display: flex;
             flex-direction: column;
+            justify-content: center;
+        }
+        .container>.img_blocks {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="img_blocks">
@@ -37,4 +36,5 @@
         </div>
     </div>
 </body>
+
 </html>
